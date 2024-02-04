@@ -1,5 +1,5 @@
-import 'package:dp_shop/dp_shop_screen.dart';
 import 'package:flutter/material.dart';
+import 'dp_shop_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DpShopScreen(),
+      home: const DpShopScreen(),
     );
   }
 }
