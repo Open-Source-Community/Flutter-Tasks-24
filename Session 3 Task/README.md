@@ -15,5 +15,4 @@ Points Counter Screen allows you to keep track of points for Team A and Team B i
 3. Press the "Reset" button to set the scores for both teams back to zero.
 
 ## Design
-<img src="https://github.com/Open-Source-Community/Flutter-Tasks-24/assets/110198101/44ed473f-8599-4c51-845b-a2e2c6a1750f" width="200" height="400" alt="Points Counter Screen">
-
+<img src="https://github.com/Open-Source-Community/Flutter-Tasks-24/assets/110198101/04b21bbd-ea86-450e-9bc3-68a17644029a" width="200" height="400" alt="Points Counter Screen">
