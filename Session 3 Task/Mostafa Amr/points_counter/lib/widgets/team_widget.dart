@@ -32,7 +32,6 @@ class _TeamWidgetState extends State<TeamWidget> {
           });
         },
       ),
-      SizedBox(height: 30),
       CustomButton(
         textbotton: "Add 2 Point",
         onPressed: () {
@@ -41,7 +40,6 @@ class _TeamWidgetState extends State<TeamWidget> {
           });
         },
       ),
-      SizedBox(height: 30),
       CustomButton(
         textbotton: "Add 3 Point",
         onPressed: () {

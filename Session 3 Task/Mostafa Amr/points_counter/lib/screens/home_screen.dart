@@ -26,47 +26,44 @@ class _HomeScreenState extends State<HomeScreen> {
               fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 60,
-          ),
-          child: Column(
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                      child: TeamWidget(
-                    teamName: "Team A",
-                    teamScore: team_A,
-                  )),
-                  Container(
-                    color: Color.fromARGB(255, 214, 214, 214),
-                    width: 3,
-                    height: 500,
-                  ),
-                  Expanded(
-                      child: TeamWidget(
-                    teamName: "Team B",
-                    teamScore: team_B,
-                  )),
-                ],
+              Expanded(
+                  child: TeamWidget(
+                teamName: "Team A",
+                teamScore: team_A,
+              )),
+              Expanded(
+                flex: 0,
+                child: Container(
+                  color: Color.fromARGB(255, 214, 214, 214),
+                  width: 3,
+                  height: 500,
+                ),
               ),
-              SizedBox(height: 65),
-              CustomButton(
-                textbotton: "Reset",
-                onPressed: () {
-                  setState(() {
-                    team_A = 0;
-                    team_B = 0;
-                  });
-                },
-              ),
+              Expanded(
+                  child: TeamWidget(
+                teamName: "Team B",
+                teamScore: team_B,
+              )),
             ],
           ),
-        ),
+          Expanded(
+            flex: 0,
+            child: CustomButton(
+              textbotton: "Reset",
+              onPressed: () {
+                setState(() {
+                  team_A = 0;
+                  team_B = 0;
+                });
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
